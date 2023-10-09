@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e0eef3;
+  font-family: "Roboto", "sans-serif";
+}
+
+/*
+- Align items puts all content in the center
+- this class is for the entire to thing
+*/
+.main-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*
+- this class is for the input box
+*/
+.input{
+  height: 50px;
+  width: 300px;
+  background-color: #ffffffff;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/*
+- this is for the list items in the workout list
+*/
+.li{
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+/*
+- this is for the "add" button in the workoutlist 
+- cursor pointer makes it to where when the cursor hovers over the button it 
+appears as clickable
+*/
+.button{
+  height: 30px;
+  width: 60px;
+  background-color: #1b0fff;
+  color: white;
+  font-size: 1.05rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
