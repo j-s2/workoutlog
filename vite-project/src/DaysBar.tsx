@@ -32,100 +32,102 @@ export const DaysBar = () => {
   return (
     <div className="workout-log-main">
       <div className="title">Choose a day to log workouts</div>
-      <div className="bar">
-        <button
-          className="button2"
-          onClick={() => handleButtonClick("Monday")}
-        >
-          Monday
-        </button>
-        <button
-          className="button2"
-          onClick={() => handleButtonClick("Tuesday")}
-        >
-          Tuesday
-        </button>
-        <button
-          className="button2"
-          onClick={() => handleButtonClick("Wednesday")}
-        >
-          Wednesday
-        </button>
-        <button
-          className="button2"
-          onClick={() => handleButtonClick("Thursday")}
-        >
-          Thursday
-        </button>
-        <button
-          className="button2"
-          onClick={() => handleButtonClick("Friday")}
-        >
-          Friday
-        </button>
-        <button
-          className="button2"
-          onClick={() => handleButtonClick("Saturday")}
-        >
-          Saturday
-        </button>
-        <button
-          className="button2"
-          onClick={() => handleButtonClick("Sunday")}
-        >
-          Sunday
-        </button>
+      <div className="bar-log">
+        <div className="bar">
+          <button
+            className="button2"
+            onClick={() => handleButtonClick("Monday")}
+          >
+            Monday
+          </button>
+          <button
+            className="button2"
+            onClick={() => handleButtonClick("Tuesday")}
+          >
+            Tuesday
+          </button>
+          <button
+            className="button2"
+            onClick={() => handleButtonClick("Wednesday")}
+          >
+            Wednesday
+          </button>
+          <button
+            className="button2"
+            onClick={() => handleButtonClick("Thursday")}
+          >
+            Thursday
+          </button>
+          <button
+            className="button2"
+            onClick={() => handleButtonClick("Friday")}
+          >
+            Friday
+          </button>
+          <button
+            className="button2"
+            onClick={() => handleButtonClick("Saturday")}
+          >
+            Saturday
+          </button>
+          <button
+            className="button2"
+            onClick={() => handleButtonClick("Sunday")}
+          >
+            Sunday
+          </button>
+        </div>
+        {/*If workoutLogDay is set to <day>, render WorkOutLog component for that day, pass in item[][] array and call back function as props*/}
+        {workoutLogDay === "Monday" && (
+          <WorkOutLog
+            day="Monday"
+            array={itemsArray}
+            updateArray={updateItemsArray}
+          />
+        )}
+        {workoutLogDay === "Tuesday" && (
+          <WorkOutLog
+            day="Tuesday"
+            array={itemsArray}
+            updateArray={updateItemsArray}
+          />
+        )}
+        {workoutLogDay === "Wednesday" && (
+          <WorkOutLog
+            day="Wednesday"
+            array={itemsArray}
+            updateArray={updateItemsArray}
+          />
+        )}
+        {workoutLogDay === "Thursday" && (
+          <WorkOutLog
+            day="Thursday"
+            array={itemsArray}
+            updateArray={updateItemsArray}
+          />
+        )}
+        {workoutLogDay === "Friday" && (
+          <WorkOutLog
+            day="Friday"
+            array={itemsArray}
+            updateArray={updateItemsArray}
+          />
+        )}
+        {workoutLogDay === "Saturday" && (
+          <WorkOutLog
+            day="Saturday"
+            array={itemsArray}
+            updateArray={updateItemsArray}
+          />
+        )}
+        {workoutLogDay === "Sunday" && (
+          <WorkOutLog
+            day="Sunday"
+            array={itemsArray}
+            updateArray={updateItemsArray}
+          />
+        )}
       </div>
-      {/*If workoutLogDay is set to <day>, render WorkOutLog component for that day, pass in item[][] array and call back function as props*/}
-      {workoutLogDay === "Monday" && (
-        <WorkOutLog
-          day="Monday"
-          array={itemsArray}
-          updateArray={updateItemsArray}
-        />
-      )}
-      {workoutLogDay === "Tuesday" && (
-        <WorkOutLog
-          day="Tuesday"
-          array={itemsArray}
-          updateArray={updateItemsArray}
-        />
-      )}
-      {workoutLogDay === "Wednesday" && (
-        <WorkOutLog
-          day="Wednesday"
-          array={itemsArray}
-          updateArray={updateItemsArray}
-        />
-      )}
-      {workoutLogDay === "Thursday" && (
-        <WorkOutLog
-          day="Thursday"
-          array={itemsArray}
-          updateArray={updateItemsArray}
-        />
-      )}
-      {workoutLogDay === "Friday" && (
-        <WorkOutLog
-          day="Friday"
-          array={itemsArray}
-          updateArray={updateItemsArray}
-        />
-      )}
-      {workoutLogDay === "Saturday" && (
-        <WorkOutLog
-          day="Saturday"
-          array={itemsArray}
-          updateArray={updateItemsArray}
-        />
-      )}
-      {workoutLogDay === "Sunday" && (
-        <WorkOutLog
-          day="Sunday"
-          array={itemsArray}
-          updateArray={updateItemsArray}
-        />
-      )}
     </div>
   );
 };

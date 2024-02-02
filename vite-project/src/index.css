@@ -13,11 +13,8 @@
 - this class is for the entire to thing
 */
 .main-container{
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 /*
 - this class is for the input box
@@ -74,4 +71,11 @@ appears as clickable
 .button:hover{
   background-color: #528ea0;
   transition: background-color 0.8s ease;
+}
+
+.input-and-button{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
 }

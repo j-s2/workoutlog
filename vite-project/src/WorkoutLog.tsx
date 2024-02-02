@@ -99,6 +99,8 @@ export const WorkOutLog = ({ day, array, updateArray }: Prop) => {
       completed: false,
     };
 
+    setInput(""); //reset input state variable value
+
     if (day === "Monday") {
       //create copy of array from DaysBar.tsx
       const newArray = [...array];
@@ -150,7 +152,9 @@ export const WorkOutLog = ({ day, array, updateArray }: Prop) => {
   };
   return (
     <div className="main-container">
-      <h1 style={{color: "#7ac4db", fontWeight: "bold"}}>Workout log for {day}</h1>
+      <h1 style={{ color: "#7ac4db", fontWeight: "bold" }}>
+        Workout log for {day}
+      </h1>
       <ul>
         {/* List all current workouts for the day selected */}
         {workouts.map((workout) => (
@@ -167,16 +171,19 @@ export const WorkOutLog = ({ day, array, updateArray }: Prop) => {
         ))}
       </ul>
       {/*Receive input from user, pass event value to setInput function*/}
-      <input
-        className="input"
-        type="text"
-        placeholder="Add workouts w/ sets, reps, miles, etc."
-        onChange={(e) => setInput(e.currentTarget.value)}
-      />
-      {/* Add button */}
-      <button onClick={handleClick} className="button">
-        Add
-      </button>
+      <div className="input-and-button">
+        <input
+          className="input"
+          type="text"
+          value={input}
+          placeholder="Add workouts w/ sets, reps, miles, etc."
+          onChange={(e) => setInput(e.currentTarget.value)}
+        />
+        {/* Add button */}
+        <button onClick={handleClick} className="button">
+          Add
+        </button>
+      </div>
     </div>
   );
 };

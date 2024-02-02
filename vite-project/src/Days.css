@@ -13,23 +13,32 @@
   font-weight: bold;
 }
 
+.bar-log{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .bar{
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
 .button2{
   height: 30px;
   width: 90px;
-  background-color: #7ac4db;
-  color: white;
+  background-color: #e0eef3;
+  color: #7ac4db;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 10px;
+  font-size: large;
+  border-radius: 3px;
   border-style: none;
 }
 
 .button2:hover{
   background-color: #528ea0;
-  transition: background-color 0.8s ease;
+  color: white;
+  transition: background-color 0.8s ease, color 0.8s ease;
 }
