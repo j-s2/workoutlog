@@ -150,11 +150,11 @@ export const WorkOutLog = ({ day, array, updateArray }: Prop) => {
   };
   return (
     <div className="main-container">
-      <h1>Workout Log for {day}</h1>
+      <h1 style={{color: "#7ac4db", fontWeight: "bold"}}>Workout log for {day}</h1>
       <ul>
         {/* List all current workouts for the day selected */}
         {workouts.map((workout) => (
-          <li
+          <div
             key={workout.id}
             className="li"
             onClick={() => handleToggle(workout.id)}
@@ -163,7 +163,7 @@ export const WorkOutLog = ({ day, array, updateArray }: Prop) => {
             }}
           >
             {workout.text}
-          </li>
+          </div>
         ))}
       </ul>
       {/*Receive input from user, pass event value to setInput function*/}

@@ -30,46 +30,47 @@ export const DaysBar = () => {
   };
 
   return (
-    <div>
+    <div className="workout-log-main">
+      <div className="title">Choose a day to log workouts</div>
       <div className="bar">
         <button
-          className="day button2"
+          className="button2"
           onClick={() => handleButtonClick("Monday")}
         >
           Monday
         </button>
         <button
-          className="day button2"
+          className="button2"
           onClick={() => handleButtonClick("Tuesday")}
         >
           Tuesday
         </button>
         <button
-          className="day button2"
+          className="button2"
           onClick={() => handleButtonClick("Wednesday")}
         >
           Wednesday
         </button>
         <button
-          className="day button2"
+          className="button2"
           onClick={() => handleButtonClick("Thursday")}
         >
           Thursday
         </button>
         <button
-          className="day button2"
+          className="button2"
           onClick={() => handleButtonClick("Friday")}
         >
           Friday
         </button>
         <button
-          className="day button2"
+          className="button2"
           onClick={() => handleButtonClick("Saturday")}
         >
           Saturday
         </button>
         <button
-          className="day button2"
+          className="button2"
           onClick={() => handleButtonClick("Sunday")}
         >
           Sunday
