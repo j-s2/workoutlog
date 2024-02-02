@@ -21,6 +21,8 @@ export const WorkOutLog = ({ day, array, updateArray }: Prop) => {
   // check if array.length is 0 because trying to push to an empty array into an
   // empty array gave an error
   if (day === "Monday" && array.length > 0) {
+    //prevents issue where the same workout would be added multiple times per click
+
     //grab id values in workouts array
     const grabIds = new Set(workouts.map((workout) => workout.id));
     //grab all elements whose id is not in grabIds (or workouts array)
