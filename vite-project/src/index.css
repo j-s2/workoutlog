@@ -13,7 +13,7 @@
 - this class is for the entire to thing
 */
 .main-container{
-  height: 100vh;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,19 +26,32 @@
   height: 50px;
   width: 300px;
   background-color: #ffffffff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   border: 1px solid #ccc;
   margin-left: 10px;
   margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color:#7ac4db;
+  text-align: center;
 }
+
+.input:focus{
+  border-style: none;
+  outline: none;
+}
+
 
 /*
 - this is for the list items in the workout list
 */
 .li{
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 20px;
+  color: #528ea0;
+  font-weight: bold;
+  text-align: center;
 }
 
 /*
@@ -49,9 +62,16 @@ appears as clickable
 .button{
   height: 30px;
   width: 60px;
-  background-color: #1b0fff;
+  background-color: #7ac4db;
   color: white;
   font-size: 1.05rem;
+  border-style: none;
+  border-radius: 10px;
   margin-top: 10px;
   cursor: pointer;
+}
+
+.button:hover{
+  background-color: #528ea0;
+  transition: background-color 0.8s ease;
 }
