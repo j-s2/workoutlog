@@ -16,7 +16,7 @@
 .bar-log{
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
 }
 
 .bar{
@@ -27,7 +27,7 @@
 
 .button2{
   height: 30px;
-  width: 90px;
+  width: 100px;
   background-color: #e0eef3;
   color: #7ac4db;
   cursor: pointer;

@@ -176,7 +176,7 @@ export const WorkOutLog = ({ day, array, updateArray }: Prop) => {
           className="input"
           type="text"
           value={input}
-          placeholder="Add workouts w/ sets, reps, miles, etc."
+          placeholder="Enter workouts w/ sets, reps, miles, etc here"
           onChange={(e) => setInput(e.currentTarget.value)}
         />
         {/* Add button */}

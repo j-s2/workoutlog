@@ -21,13 +21,13 @@
 */
 .input{
   height: 50px;
-  width: 300px;
-  background-color: #ffffffff;
+  width: 320px;
+  background-color: #e0eef3;
   border-radius: 10px;
   padding: 10px;
   border: 1px solid #ccc;
+  border-style: none;
   margin-left: 10px;
-  margin-top: 10px;
   font-size: 15px;
   font-weight: bold;
   color:#7ac4db;
